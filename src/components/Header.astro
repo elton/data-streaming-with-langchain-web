@@ -1,0 +1,15 @@
+---
+export const prerender = true;
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+---
+
+<header class="flex my-5 space-x-5 justify-center items-center">
+  <div>
+    <Image src={logo} alt="logo" class="w-20 h-20" />
+  </div>
+
+  <h1 class="text-3xl text-center italic p-4 text-cyan-900 font-semibold">
+    OpenAI Streaming with FastAPI & LangChain
+  </h1>
+</header>
